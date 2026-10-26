@@ -1,0 +1,24 @@
+{
+  "model": "HistGradientBoosting",
+  "cv_accuracy": {
+    "LogisticRegression": 0.7899055076571381,
+    "RandomForest": 0.8016981727342785,
+    "HistGradientBoosting": 0.8088876591034865
+  },
+  "holdout_accuracy": 0.8125359401955147,
+  "holdout_roc_auc": 0.9133365873532384,
+  "n_train": 8693,
+  "raw_columns": [
+    "HomePlanet",
+    "CryoSleep",
+    "Cabin",
+    "Destination",
+    "Age",
+    "VIP",
+    "RoomService",
+    "FoodCourt",
+    "ShoppingMall",
+    "Spa",
+    "VRDeck"
+  ]
+}

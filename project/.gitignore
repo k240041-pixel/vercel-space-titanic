@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.env
+
+# Kaggle's competition rules generally don't allow re-posting the data publicly.
+# Download it yourself (see README). Delete this line if you decide to commit it.
+data/

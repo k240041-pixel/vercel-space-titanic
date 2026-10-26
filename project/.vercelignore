@@ -1,0 +1,9 @@
+data/
+tests/
+.github/
+artifacts/submission.csv
+curl_examples.sh
+run_prod.sh
+Procfile
+gunicorn.conf.py
+README.md

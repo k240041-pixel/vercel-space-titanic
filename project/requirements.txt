@@ -1,0 +1,19 @@
+# ---- Runtime dependencies (what the server needs) ----
+
+# ML stack: pinned EXACTLY to the versions used to train artifacts/model.joblib.
+# A pickled scikit-learn model can fail or silently misbehave on a different version.
+scikit-learn==1.8.0
+pandas==3.0.2
+numpy==2.4.4
+scipy==1.17.1
+joblib==1.5.3
+
+# API layer: compatible-release ranges (receive patch/minor fixes, no breaking majors)
+fastapi>=0.115,<1.0
+pydantic>=2.5,<3.0
+
+# Production server: Gunicorn manages worker processes,
+# Uvicorn workers run the async FastAPI app inside each of them.
+gunicorn>=22.0,<24.0
+uvicorn>=0.30,<1.0
+uvicorn-worker>=0.2,<1.0
